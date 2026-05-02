@@ -2,7 +2,7 @@
 
 ## Demo
 
-See it live at [population-challenge.vercel.app](https://population-challenge.vercel.app/).
+See it live at [population-challenge.vercel.app](https://population-challenge.vercel.app/)
 
 An interactive animated bar chart showing the population of major countries from 1990 to the present. Step through each year and watch country rankings shift in real time.
 
