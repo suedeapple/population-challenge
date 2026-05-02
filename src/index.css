@@ -48,19 +48,11 @@
   --text-base: 1rem;
 
 
-  /* Graph-paper background */
-  --grid-line: rgba(79, 195, 247, 0.07);
-  --grid-size: 24px;
-
   font: 1rem/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: dark;
   color: var(--text);
-  background-color: var(--bg);
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: var(--grid-size) var(--grid-size);
+  background: radial-gradient(ellipse at 30% 20%, #112244 0%, #0a1628 50%, #060e1c 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

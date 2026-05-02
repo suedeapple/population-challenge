@@ -63,9 +63,11 @@ export function PopulationChart({ countries, limit }: Props) {
         const isVisible = rank < visibleCount
         const isDimmed = selected !== null && selected !== country.Country
 
+        // Never-seen countries default to the bottom of the visible area so they
+        // animate in from within the chart rather than flying in from off-screen.
         const top = isVisible
           ? rank * ROW_HEIGHT
-          : (lastTop.current[country.Country] ?? rank * ROW_HEIGHT)
+          : (lastTop.current[country.Country] ?? (visibleCount - 1) * ROW_HEIGHT)
 
         if (isVisible) {
           lastTop.current[country.Country] = top
