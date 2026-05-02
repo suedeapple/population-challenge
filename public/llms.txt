@@ -1,0 +1,5 @@
+# Population Challenge
+
+> Interactive animated bar chart showing the population of major countries from 1990 to the present. Step through each year and watch rankings shift in real time.
+
+A single-page web app built with React, Vite, and TypeScript. No server — all data is bundled statically. Countries covered include China, India, the United States, Indonesia, Pakistan, Brazil, Nigeria, Bangladesh, Russia, Ethiopia, and more.
