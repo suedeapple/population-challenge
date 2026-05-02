@@ -112,11 +112,13 @@ function App() {
 
       <FiltersModal
         open={showFilters}
-        onClose={() => setShowFilters(false)}
-        showAll={showAll}
-        onShowAllChange={setShowAll}
-        useRealData={useRealData}
-        onUseRealDataChange={setUseRealData}
+        onClose={({ showAll: newShowAll, useRealData: newUseRealData }) => {
+          setShowAll(newShowAll)
+          setUseRealData(newUseRealData)
+          setShowFilters(false)
+        }}
+        initialShowAll={showAll}
+        initialUseRealData={useRealData}
         countryCount={current.Countries.length}
       />
 
