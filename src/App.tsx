@@ -105,7 +105,7 @@ function App() {
 
           <div className="chart-card-body">
             {/* key forces a clean remount on dataset switch, resetting lastTop positions */}
-            <PopulationChart key={useRealData ? 'real' : 'original'} countries={current.Countries} limit={showAll ? undefined : 10} />
+            <PopulationChart key={`${useRealData}-${showAll}`} countries={current.Countries} limit={showAll ? undefined : 10} />
           </div>
         </div>
       </main>
