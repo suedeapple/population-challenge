@@ -34,6 +34,33 @@ The original dataset provided for this project does not reflect real-world popul
 - Framer Motion — bar animations
 - CSS custom properties + nesting — no CSS framework
 
+## Structure
+```
+public/
+  favicon.svg
+  robots.txt
+  llms.txt
+src/
+  data/
+    population-data.json       # Primary dataset
+    population-data-real.json  # Real-world figures
+    concept.gif                # Design reference
+  components/
+    PopulationChart.tsx        # Animated horizontal bar chart (hero widget)
+    FiltersModal.tsx           # Native <dialog> — view + dataset toggles
+    HelpModal.tsx              # Native <dialog> — how it works, shown on first visit
+  utils/
+    formatters.ts              # Population abbreviation (1.4B, 300M)
+    iso3.ts                    # Country → ISO 3166-1 alpha-3 mapping
+    colors.ts                  # Bar color helpers
+  types/
+    index.ts                   # Shared TypeScript types
+  App.tsx                      # Root layout, owns topN + sortOrder state
+  App.css
+  index.css
+  main.tsx                     # React root mount
+```
+
 ## Getting started
 
 ```bash

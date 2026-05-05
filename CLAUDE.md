@@ -20,6 +20,10 @@ Data loaded from a local JSON file at `src/data/population-data.json`.
 
 ## Structure
 ```
+public/
+  favicon.svg
+  robots.txt
+  llms.txt
 src/
   data/
     population-data.json       # Primary dataset
@@ -35,9 +39,6 @@ src/
     colors.ts                  # Bar color helpers
   types/
     index.ts                   # Shared TypeScript types
-  assets/
-    hero.png
-    react.svg / vite.svg
   App.tsx                      # Root layout, owns topN + sortOrder state
   App.css
   index.css
